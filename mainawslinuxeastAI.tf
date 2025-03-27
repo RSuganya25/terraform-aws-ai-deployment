@@ -18,7 +18,7 @@ resource "local_file" "private_key_pemai" {
 
 # Create the key pair
 resource "aws_key_pair" "server_key_ai" {
-  key_name   = "serverai"
+  key_name   = "serverai_new"
   public_key = tls_private_key.priv_key_ai.public_key_openssh
 }
 

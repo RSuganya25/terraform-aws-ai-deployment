@@ -24,7 +24,7 @@ resource "aws_key_pair" "server_key_ai" {
 
 # Allow SSH. CIDR blocks must be used or it will not work.
 resource "aws_security_group" "byuisgai" {
-  name        = "allow-ssh-ai"
+  name        = "allow-ssh-ai-new"
   description = "Allow SSH and AI"
   
   ingress {
